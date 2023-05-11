@@ -52,4 +52,10 @@ bienvenida();
 comprarProducto();
 carritoCompras();
 
-let opciones = prompt("\n 1: Seguir Comprando \n 2: Ir a Carrito de Compras");
+let opciones = prompt();
+
+function adios(){
+    alert("Gracias por su preferencia");
+}
+
+adios();
