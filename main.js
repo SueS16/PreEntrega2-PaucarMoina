@@ -1,58 +1,48 @@
 
-//Dar la Biendenida al comprador
+//Dar la Biendenida a la Tienda
+
 function bienvenida() {
     alert("¡Bienvenid@ a la Tienda Virtual Ayleen Store!");
 }
 
-function comprarProducto() {
-    enunciado = prompt("Nuestros productos son: \n 1: Ropa para bebes \n 2: Cuidado Personal \n 3: Regalos \n 4: Carrito de Compras");
-    if (enunciado === "1") {
-        alert("escogiste Ropa para bebes para tu compra por un total de " + ropaBebe * 1.18);
-
-    } else if (enunciado === "2") {
-        alert("escogiste Cuidado Personal para tu compra por un total de " + cuiPersonal * 1.18);
-    
-    } else if (enunciado === "3") {
-        alert("escogiste Regalos Varios para tu compra por un total de " + regVarios * 1.18);
-    
-    } else if (enunciado === "4") {        
-    }
-    opciones = prompt("\n 1: Seguir Comprando \n 2: Ir a Carrito de Compras");
-
-}
-
-
-
-function carritoCompras() {
-    let nombre = prompt("ingrese su nombre para continuar ");
-    alert("Hola! " + nombre + " bienvenido a tu carrito de compras!");
-
-
-    carrito = prompt("Paga Aquí con: \n 1: Yape (forma de pago virtual) \n 2: Tarjeta de Crédito/Débito \n 3: Efectivo \n 4: Volver a Inicio " )
-
-    if (carrito === "1") {
-        alert("Yapea en el siguiente QR");
-    } else if (carrito === "2") {
-        alert("Debes ser mayor de edad para usar una tarjeta, ingresa tu edad");
-    } else if (carrito === "3") {
-        alert("Recoge tus compras en nuestro local y nos cancelas allí mismo!");
-    }
-    
-
-
-}
-
-//main, acá arranca el programa
-let enunciado;
-let carrito;
-let ropaBebe = 200;
-let cuiPersonal = 300;
-let regVarios = 400;
 bienvenida();
-comprarProducto();
-carritoCompras();
 
-let opciones = prompt();
+
+//Primer Paso JS.
+
+function seleccionar(){
+    let categorias = prompt ("En esta tienda podrás encontrar articulos variaos, mira nuestras categorias: \n 1. Comprar productos \n 2. Ver precios \n 3. Carrito de Compras \n 4. Metodo de Pago");
+    if(categorias === "1"){
+        alert ("Escoge los productos que deseas llevar");
+    }else if(categorias === "2"){
+        alert ("Ve aquí nuestros precios más accesibles");
+    }else if(categorias === "3"){
+        alert("Revisa tus productos agregados al carrito");
+    }else if(categorias === "4"){
+        tarjetaCompras()
+    }
+}
+
+seleccionar();
+
+//Segundo Paso
+
+function tarjetaCompras(){
+    let edad = 18;
+    
+    edad = prompt("Ingrese su edad");
+    
+    if(edad >= 18){
+        prompt ("Puedes usar una tarjeta de Crédito/Débito \n Ingresa tu N° de Tarjeta:" );
+    }else{
+        alert("No puedes usar una tarjeta");
+    }
+}
+
+tarjetaCompras();
+
+
+//Tercer Paso
 
 function adios(){
     alert("Gracias por su preferencia");
