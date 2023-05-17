@@ -61,3 +61,4 @@ function tarjetaCompras() {
 tarjetaCompras();
 
 //BREAK: Finaliza la sentencia actual y transfiere el control del programa a la siguiente sentencia de la sentencia finalizada.
+// \n Dar saltos, espacios entre líneas.
