@@ -46,12 +46,12 @@ function tarjetaCompras() {
         edad = prompt("Tiene que ser mayor de edad para continuar, Ingrese su edad, por favor:");
         if (edad >= 18) {
             prompt("Puedes usar una tarjeta de Crédito/Débito \n Ingresa tu N° de Tarjeta:");
-            adios(terminar);
+            let terminar = alert("Gracias por su preferencia")
             break
 
         }else if(edad < 18) {
             alert("No puedes usar una tarjeta");
-            adios(terminar);
+            let terminar = alert("Gracias por su preferencia")
             break
         }
 
@@ -59,13 +59,5 @@ function tarjetaCompras() {
 }
 
 tarjetaCompras();
-
-//Tercer Paso
-
-function adios(terminar) {
-    alert("Gracias por su preferencia");
-}
-
-adios()
 
 //BREAK: Finaliza la sentencia actual y transfiere el control del programa a la siguiente sentencia de la sentencia finalizada.
