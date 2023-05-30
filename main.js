@@ -7,10 +7,34 @@ alert("¡Bienvenid@ a la Tienda Virtual Ayleen Store!");
 function seleccionar() {
     let categorias = prompt("En esta tienda podrás encontrar articulos variaos, mira nuestras categorias: \n 1. Comprar productos \n 2. Ver precios \n 3. Carrito de Compras \n 4. Metodo de Pago");
     if (categorias == "1") {
-        let escogerProductos1 = prompt("Escoge los productos que deseas llevar: \n A. Ropa Bebe \n B. Regalos \n C. Volver a Inicio");
+        let escogerProductos1 = prompt("Escoge los productos que deseas llevar: \n A. Ropa Bebe \n B. Perfumes \n C. Volver a Inicio");
         if (escogerProductos1 == "A") {
+            function RopaBebe (nombre, precios, medida){
+                this.nombre = nombre;
+                this.precios = precios;
+                this.tamaño = medida;
+            }
+
+            let perfume = [
+                {nombre: "Recien Ncido", precio: "30", tamaño:"pequeño"},
+                {nombre: "Talla 2", precio: "30", tamaño:"2"},
+                {nombre: "Talla 4", precio: "30", tamaño:"4"},
+                {nombre: "Talla 6", precio: "30", tamaño:"6"},
+            ]
 
         }else if (escogerProductos1 == "B") {
+            function Perfumes (nombre, precio, medida){
+                this.marca = nombre;
+                this.precio = precio;
+                this.tamaño = medida;
+            }
+
+            let perfume = [
+                {nombre: "Soy Glouw", precio: "30", tamaño:"400ml"},
+                {nombre: "Soy Latina", precio: "30", tamaño:"400ml"},
+                {nombre: "Soy Glouw", precio: "30", tamaño:"400ml"},
+                {nombre: "Soy Glouw", precio: "30", tamaño:"400ml"},
+            ]
 
         }else if (escogerProductos1 == "C") {
             let volverInicio = alert("Volver al Inicio");
