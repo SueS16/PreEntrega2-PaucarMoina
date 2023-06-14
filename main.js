@@ -84,6 +84,38 @@ function tarjetaCompras() {
 
 tarjetaCompras();
 
+
+
+
+
+let perfumes = [
+    {
+        id: 1,
+        nombre: "Perfume 1",
+        precio: 89.90,
+        imagen: "./img/esika1"
+    },
+    {
+        id: 1,
+        nombre: "Perfume 1",
+        precio: 92.0,
+        imagen: "./img/esika2"
+    },
+    {
+        id: 1,
+        nombre: "Perfume 1",
+        precio: 79.0,
+        imagen: "./img/yanbal1"
+    },
+    {
+        id: 1,
+        nombre: "Perfume 1",
+        precio: 100.0,
+        imagen: "./img/yanbal2"
+    }
+
+]
+
 //BREAK: Finaliza la sentencia actual y transfiere el control del programa a la siguiente sentencia de la sentencia finalizada.
 // \n Dar saltos, espacios entre líneas.
 //
