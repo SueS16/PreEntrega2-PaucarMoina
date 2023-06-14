@@ -113,8 +113,39 @@ let perfumes = [
         precio: 100.0,
         imagen: "./img/yanbal2",
     },
+];
 
-]
+const contenedor = document.getElementById("contaPerfumes")
+perfumes.forEach((perfume,indice)=>{
+    let card=document.createElement("div");
+    card.classList.add("card","col.sm.12","col-lg-3")
+    let contenido= `<img src="${perfume.imagen}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">${producto.nombre}</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>`
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //BREAK: Finaliza la sentencia actual y transfiere el control del programa a la siguiente sentencia de la sentencia finalizada.
 // \n Dar saltos, espacios entre líneas.
