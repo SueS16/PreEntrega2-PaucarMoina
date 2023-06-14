@@ -96,23 +96,23 @@ let perfumes = [
         imagen: "./img/esika1"
     },
     {
-        id: 1,
+        id: 2,
         nombre: "Perfume 1",
         precio: 92.0,
         imagen: "./img/esika2"
     },
     {
-        id: 1,
+        id: 3,
         nombre: "Perfume 1",
         precio: 79.0,
         imagen: "./img/yanbal1"
     },
     {
-        id: 1,
+        id: 4,
         nombre: "Perfume 1",
         precio: 100.0,
         imagen: "./img/yanbal2"
-    }
+    },
 
 ]
 
