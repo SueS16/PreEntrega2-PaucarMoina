@@ -119,14 +119,43 @@ const contenedor = document.getElementById("contaPerfumes")
 perfumes.forEach((perfume,indice)=>{
     let card=document.createElement("div");
     card.classList.add("card","col.sm.12","col-lg-3")
-    let contenido= `<img src="${perfume.imagen}" class="card-img-top" alt="...">
+    card.innerHTML=`<img src="${perfume.imagen}" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">${producto.nombre}</h5>
+      <h5 class="card-title">${perfume.nombre}</h5>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>`
-})
+      <a href="#cart" class="btn btn-info" onClick="futuraFuncion(${indice})>Agregar</a>
+    </div>`;
+    contenedor.appendChild(card); 
+});
 
+let modalCarrito = document.getElementById("cart");
+
+const crearCarrito=()=>{
+    modalCarrito.className = "cart"
+    modalCarrito.innerHTML = ""
+    carritoDeCompras.forEach((perfume, indice) =>{
+        const carritocontainer = document.createElement("div")
+        carritocontainer.className("perfume-carrito");
+        carritocontainer.innerHTML=`<img src="${perfume.imagen}" class="card-img" alt="..."
+        />
+    <div class="products-details">${
+        perfume.nombre}
+    </div>
+    <div class="product-details"> Cantidad: ${perfume.cantidad}</div>
+    <div class="product-details"> Precio:${perfume.precio}</div>
+    <div class="product-details"> Subtotal: ${
+        perfume.precio*perfume.cantidad}</div>
+    <button class="btn btn-info" id="remove-prudct" onClick="removeProduct(${indice})">Eliminar producto</button>`;
+    });
+
+    modalCarrito.appendChild(carritocontainer);
+  
+
+
+}
+
+
+let carritoDeCompras = []
 
 
 
