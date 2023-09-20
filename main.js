@@ -50,7 +50,7 @@ function babyItems() {
     const cuantity = prompt(
       "Por favor elija la cantidad de productos que desea comprar"
     );
-    buyItemsMale(itemParaCompra, cuantity);
+    buybabyItems(itemParaCompra, cuantity);
   } else {
     alert("El producto que desea no existe, por favor intente nuevamente");
   }
@@ -70,13 +70,13 @@ function perfumeItems() {
     const cuantity = prompt(
       "Por favor elija la cantidad de productos que desea comprar"
     );
-    buyItemsFemale(itemParaCompra, cuantity);
+    buyperfumeItems(itemParaCompra, cuantity);
   } else {
     alert("El producto que desea no existe, por favor intente nuevamente");
   }
 }
 
-function buyItemsMale(itemParaCompra, cuantity) {
+function buybabyItems(itemParaCompra, cuantity) {
   switch (itemParaCompra) {
     case "1":
       totalVenta = pañales * Number(cuantity);
@@ -100,7 +100,7 @@ function buyItemsMale(itemParaCompra, cuantity) {
   printTotal(totalVenta);
 }
 
-function buyItemsFemale(itemParaCompra, cuantity) {
+function buyperfumeItems(itemParaCompra, cuantity) {
   switch (itemParaCompra) {
     case "1":
       totalVenta = perfumeMia * Number(cuantity);
